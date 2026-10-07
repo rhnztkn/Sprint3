@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tüm Etkinlikler</title>
+    <link rel="stylesheet" href="css/2416501017.css">
+    <!-- Script buraya eklendi -->
+    <script type="module" src="js/event-list.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Tüm Etkinlikler</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="etkinlikler.html">Etkinlikler</a></li>
+                <li><a href="etkinlik-ekle.html">Ekle</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <!-- Arama ve Kategori Filtresi Eklendi -->
+            <form id="filtre-formu" class="filtre" style="margin-bottom: 20px;">
+                <label for="arama">Etkinlik ara</label>
+                <input type="search" id="arama" placeholder="Örn. atölye, kariyer">
+
+                <label for="kategori-filtre" style="margin-left: 10px;">Kategori</label>
+                <select id="kategori-filtre">
+                    <option value="">Tümü</option>
+                </select>
+            </form>
+            <p id="sonuc"></p>
+
+            <!-- Elle yazılan kartlar silindi, container JS için hazırlandı -->
+            <section id="etkinlik-listesi" class="grid-3"></section>
+        </section>
+    </main>
+</body>
+</html>
